@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rm -rf ox-ai-workers-*.gem
-gem build ox-ai-workers.gemspec
-gem uninstall ox-ai-workers -x
-gem install ox-ai-workers-*.gem
+rm -rf gigachat-*.gem
+gem build gigachat.gemspec
+gem uninstall gigachat -x
+gem install gigachat-*.gem

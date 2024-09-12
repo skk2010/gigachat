@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-rm -rf ox-ai-workers-*.gem
-gem build ox-ai-workers.gemspec
-gem push ox-ai-workers-*.gem
+rm -rf gigachat-*.gem
+gem build gigachat.gemspec
+gem push gigachat-*.gem

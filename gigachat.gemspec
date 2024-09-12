@@ -4,7 +4,7 @@ require_relative 'lib/gigachat/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'gigachat'
-  spec.version = Gigachat::VERSION
+  spec.version = GigaChat::VERSION
   spec.authors = ['Denis Smolev']
   spec.email = ['smolev@me.com']
 

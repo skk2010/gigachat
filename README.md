@@ -258,7 +258,7 @@ puts response.dig("data", 0, "embedding")
 
 ### Image Generation
 
-GigaChat API will return an image if the POST /chat/completions request receives an appropriate message, for example, "Draw a pink cat". Images are generated in binary form in JPG format using the built-in text2image function.
+GigaChat API will return an image if the `#chat` method receives an appropriate message, for example, "Draw a pink cat". Images are generated in binary form in JPG format using the built-in text2image function.
 
 In response, GigaChat returns the identifier of the created image, which can be downloaded using the `POST /files/:file_id/content` request. 
 

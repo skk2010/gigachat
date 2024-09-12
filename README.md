@@ -172,7 +172,7 @@ puts response.dig("choices", 0, "message", "content")
 
 #### Streaming Chat
 
-You can stream from the API in realtime, which can be much faster and used to create a more engaging user experience. Pass a [Proc](https://ruby-doc.org/core-2.6/Proc.html) (or any object with a `#call` method) to the `stream` parameter to receive the stream of completion chunks as they are generated. Each time one or more chunks is received, the proc will be called once with each chunk, parsed as a Hash. If OpenAI returns an error, `ruby-openai` will raise a Faraday error.
+You can stream from the API in realtime, which can be much faster and used to create a more engaging user experience. Pass a [Proc](https://ruby-doc.org/core-2.6/Proc.html) (or any object with a `#call` method) to the `stream` parameter to receive the stream of completion chunks as they are generated. Each time one or more chunks is received, the proc will be called once with each chunk, parsed as a Hash. If GigaChat returns an error, `gigachat` will raise a Faraday error.
 
 ```ruby
 client.chat(
@@ -258,6 +258,7 @@ puts response.dig("data", 0, "embedding")
 
 ### Image Generation
 
+Soon
 
 ### Errors
 
@@ -273,7 +274,7 @@ HTTP errors can be caught like this:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at <https://github.com/alexrudall/ruby-openai>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/neonix20b/gigachat/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at <https://github.com/neonix20b/gigachat>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/neonix20b/gigachat/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

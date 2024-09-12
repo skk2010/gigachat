@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+rm -rf ox-ai-workers-*.gem
+gem build ox-ai-workers.gemspec
+gem uninstall ox-ai-workers -x
+gem install ox-ai-workers-*.gem

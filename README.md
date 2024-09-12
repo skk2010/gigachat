@@ -258,7 +258,13 @@ puts response.dig("data", 0, "embedding")
 
 ### Image Generation
 
-Soon
+GigaChat API will return an image if the POST /chat/completions request receives an appropriate message, for example, "Draw a pink cat". Images are generated in binary form in JPG format using the built-in text2image function.
+
+In response, GigaChat returns the identifier of the created image, which can be downloaded using the `POST /files/:file_id/content` request. 
+
+To create an image, the request must include the "function_call": "auto" parameter, which allows the model to determine the need to call the text2image function. When creating images using the built-in function, the model returns a response with the result `"finish_reason": "stop"`.
+
+You can learn more at [this link](https://developers.sber.ru/docs/ru/gigachat/api/images-generation).
 
 ### Errors
 

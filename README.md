@@ -240,6 +240,8 @@ response =
   )
 ```
 
+You can learn more at [this link](https://developers.sber.ru/docs/ru/gigachat/api/function-calling).
+
 ### Embeddings
 
 You can use the embeddings endpoint to get a vector of numbers representing an input. You can then compare these vectors for different inputs to efficiently check how similar the inputs are.

@@ -190,7 +190,7 @@ client.chat(
 
 ### Functions
 
-You can describe and pass in functions and the model will intelligently choose to output a JSON object containing arguments to call them - eg., to use your method `get_current_weather` to get the weather in a given location. Note that tool_choice is optional, but if you exclude it, the model will choose whether to use the function or not ([see here](https://developers.sber.ru/docs/ru/gigachat/api/reference/rest/post-chat)).
+You can describe and pass in functions and the model will intelligently choose to output a JSON object containing arguments to call them - eg., to use your method `get_current_weather` to get the weather in a given location.
 
 ```ruby
 

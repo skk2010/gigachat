@@ -35,7 +35,7 @@ require "gigachat"
 
 ## Usage
 
-Get your API key from [developers.sber.ru/](https://developers.sber.ru/)
+Get your API key from [developers.sber.ru](https://developers.sber.ru/)
 
 ### Quickstart
 
@@ -54,7 +54,7 @@ For a more robust setup, you can configure the gem with your API keys, for examp
 
 ```ruby
 GigaChat.configure do |config|
-  config.api_type = "GIGACHAT_API_CORP"
+  config.api_type = "GIGACHAT_API_CORP" # or GIGACHAT_API_PERS, GIGACHAT_API_B2B
   config.client_base64 = ENV.fetch("GIGACHAT_CLIENT_KEY")
 end
 ```
@@ -79,7 +79,7 @@ The default timeout for any request using this library is 120 seconds. You can c
 client = GigaChat::Client.new(
     client_base64: "secret_token_goes_here",
     uri_base: "https://oai.hconeai.com/",
-    uri_auth: "https://localhost/",
+    uri_auth: "https://localhost:5362/",
     request_timeout: 240,
     extra_headers: {
       "X-Proxy-TTL" => "43200",
@@ -152,7 +152,7 @@ There are different models that can be used to generate text. For a full list an
 
 ```ruby
 client.models.list
-client.models.retrieve(id: "gpt-4o")
+client.models.retrieve(id: "GigaChat-Pro")
 ```
 
 ### Chat

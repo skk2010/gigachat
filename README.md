@@ -157,7 +157,7 @@ client.models.retrieve(id: "GigaChat-Pro")
 
 ### Chat
 
-GPT is a model that can be used to generate text in a conversational style. You can use it to [generate a response](https://developers.sber.ru/docs/ru/gigachat/api/reference/rest/post-chat) to a sequence of messages:
+GigaChat is a model that can be used to generate text in a conversational style. You can use it to [generate a response](https://developers.sber.ru/docs/ru/gigachat/api/reference/rest/post-chat) to a sequence of messages:
 
 ```ruby
 response = client.chat(

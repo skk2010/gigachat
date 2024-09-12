@@ -35,7 +35,7 @@ require "gigachat"
 
 ## Usage
 
-Get your API key from [developers.sber.ru](https://developers.sber.ru/)
+Get your API key from [developers.sber.ru](https://developers.sber.ru/).
 
 ### Quickstart
 
